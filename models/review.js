@@ -1,0 +1,29 @@
+import { Schema, model, models } from 'mongoose';
+
+const reviewSchema = new Schema({
+    comment : String,
+    rating : 
+    {
+        type : Number,
+        min : 1,
+        max : 5
+    },
+    createAt : {
+        type : Date,
+        default : Date.now()
+    },
+    author : {
+        id:{
+            type: String,
+            required : true
+        },
+        username:{
+            type : String,
+            required: true,
+        }
+    }
+})
+
+const Review = models.Review || model("Review", reviewSchema);
+
+export default Review;
