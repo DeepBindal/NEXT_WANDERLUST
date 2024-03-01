@@ -1,4 +1,8 @@
 import Listings from "@components/Listings";
+export const metadata = {
+  title: "Wanderlust",
+  description: "Hotel booking"
+}
 function Home() {
   return (
     <section className="w-full flex-center flex-col">
