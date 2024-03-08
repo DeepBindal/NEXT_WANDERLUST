@@ -57,7 +57,7 @@ function EditForm({ type, listing, submitting, handleSubmit, setListing}) {
           </span>
           <input
             value={listing?.price || ""}
-            onChange={(e) => setListing({ ...listing, price: e.target.value })}
+            onChange={(e) => setListing({ ...listing, price: e.target.valueAsNumber })}
             type="number"
             className="form_input"
             required

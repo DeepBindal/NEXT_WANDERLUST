@@ -43,7 +43,10 @@ function Nav() {
       {/* Mobile Navigation */}
       <div className="sm:hidden flex relative">
         {userId ? (
-          <div className="flex">
+          <div className="flex px-4">
+            <Link href="/create-listing" className="red_btn mr-12">
+              Airbnb your Home!
+            </Link>
             <UserButton afterSignOutUrl="/" />
           </div>
         ) : (

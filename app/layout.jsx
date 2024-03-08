@@ -4,7 +4,7 @@ import Nav from "@components/Nav";
 import { Toaster } from "react-hot-toast";
 import Footer from "@components/footer";
 
-export const metaData = {
+export const metadata = {
   title: "Wanderlust",
   description: "Hotel booking",
 };
